@@ -1,0 +1,99 @@
+/* Body styling: sets background gradient and removes default margin */
+body {
+    margin: 0;
+    padding: 10px 0; /* vertical spacing around content */
+    background-color: #90C7E3; /* light blue */
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper styles: centers content with max and min width, adds padding and shadow */
+#wrapper {
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    margin: 20px auto; /* centers the wrapper horizontally */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* subtle shadow around content */
+    border-radius: 5px; /* slightly rounded corners */
+}
+
+/* Header styles: background image aligned to the right, fixed height */
+header {
+    background-image: url('sunset.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 72px;
+}
+
+/* Main page title styles: centered with top padding, no line height */
+h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+/* Navigation styles: padding and centered links */
+nav {
+    padding: 0.5em;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* Navigation links: remove underline and add horizontal spacing */
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000;
+}
+
+/* Footer styles: padding and centered text */
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+/* Main content area: horizontal padding */
+main {
+    padding: 0 2em;
+    display: block; /* ensures proper rendering across browsers */
+}
+
+/* Section heading styles */
+h3 {
+    font-family: Georgia, serif;
+}
+
+/* Hero image containers: fixed height and full background coverage */
+#homehero, #yurthero, #trailhero {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Specific hero images for each page */
+#homehero {
+    background-image: url('coast.jpg');
+}
+
+#yurthero {
+    background-image: url('yurt.jpg');
+}
+
+#trailhero {
+    background-image: url('trail.jpg');
+}
+
+/* Styling for special list items */
+.special {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Styling for text span with resort class */
+.resort {
+    font-weight: bold;
+    color: #003366;
+}
