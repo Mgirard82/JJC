@@ -96,9 +96,9 @@ main {
   margin-left: 170px;
 }
 
-#homehero { background-image: url(images/coast.jpg); }
-#yurthero { background-image: url(images/yurt.jpg); }
-#trailhero { background-image: url(images/trail.jpg); }
+#homehero { background-image: url(/JJC/images/coast.jpg); }
+#yurthero { background-image: url(/JJC/images/yurt.jpg); }
+#trailhero { background-image: url(/JJC/images/trail.jpg); }
 
 dt {
   color: #002171;
@@ -132,3 +132,4 @@ section {
   padding-right: 2em;
   box-sizing: border-box;
 }
+
