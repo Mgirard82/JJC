@@ -1,99 +1,88 @@
-/* Body styling: sets background gradient and removes default margin */
-body {
-    margin: 0;
-    padding: 10px 0; /* vertical spacing around content */
-    background-color: #90C7E3; /* light blue */
-    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
-    background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Wrapper styles: centers content with max and min width, adds padding and shadow */
-#wrapper {
-    background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    margin: 20px auto; /* centers the wrapper horizontally */
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* subtle shadow around content */
-    border-radius: 5px; /* slightly rounded corners */
-}
-
-/* Header styles: background image aligned to the right, fixed height */
-header {
-    background-image: url('sunset.jpg');
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 72px;
-}
-
-/* Main page title styles: centered with top padding, no line height */
-h1 {
-    text-align: center;
-    padding-top: 0.5em;
-    margin: 0;
-}
-
-/* Navigation styles: padding and centered links */
-nav {
-    padding: 0.5em;
-    text-align: center;
-    background-color: transparent;
-}
-
-/* Navigation links: remove underline and add horizontal spacing */
-nav a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #000;
-}
-
-/* Footer styles: padding and centered text */
-footer {
-    padding: 1em;
-    text-align: center;
-}
-
-/* Main content area: horizontal padding */
-main {
-    padding: 0 2em;
-    display: block; /* ensures proper rendering across browsers */
-}
-
-/* Section heading styles */
-h3 {
-    font-family: Georgia, serif;
-}
-
-/* Hero image containers: fixed height and full background coverage */
-#homehero, #yurthero, #trailhero {
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* Specific hero images for each page */
-#homehero {
-    background-image: url('coast.jpg');
-}
-
-#yurthero {
-    background-image: url('yurt.jpg');
-}
-
-#trailhero {
-    background-image: url('trail.jpg');
-}
-
-/* Styling for special list items */
-.special {
-    font-weight: bold;
-    color: #003366;
-}
-
-/* Styling for text span with resort class */
-.resort {
-    font-weight: bold;
-    color: #003366;
-}
+1 body {
+2 background-color: #90C7E3;
+3 background: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+4 background-repeat: no-repeat;
+5 color: #666666;
+6 font-family: Verdana, Arial, sans-serif;
+7 }
+8 #wrapper {
+9 width: 80%;
+10 min-width: 960px;
+11 max-width: 2048px;
+12 margin-right: auto;
+13 margin-left: auto;
+14 background-color: #FFFFFF;
+15 box-shadow: 3px 3px 3px #777;
+16 }
+17 header {
+18 background-color: #002171;
+19 background-image: url(images/sunset.jpg);
+20 background-position: right;
+21 background-repeat: no-repeat;
+22 color: #ffffff;
+23 font-family: Georgia, serif;
+24 height: 72px;
+25 }
+26 h1 {
+27 text-align: center;
+28 padding-top: .5em;
+29 font-family: 'Brush Script MT', cursive;
+30 }
+31 nav {
+32 font-weight: bold;
+33 padding-top: .5em;
+34 padding-right: .5em;
+35 padding-bottom: .5em;
+36 text-align: center;
+37 }
+38 nav a {
+39 text-decoration: none;
+40 }
+41 h2 {
+42 color: #1976D2;
+43 font-family: Georgia, serif;
+44 }
+45 h3 {
+46 font-family: Georgia, serif;
+47 }
+48 main {
+49 padding-right: 2em;
+50 padding-left: 2em;
+51 display: block;
+52 }
+53 dt {
+54 color: #002171;
+55 font-weight: bold;
+56 }
+57 .resort {
+58 color: #1976D2;
+59 font-size: 1.2em;
+60 }
+61 .special {
+62 font-weight: bold;
+63 color: #660099;
+64 }
+65 footer {
+66 font-size: .70em;
+67 text-style: italic;
+68 text-align: center;
+69 padding: 1em;
+70 }
+71 #homehero {
+72 height: 300px;
+73 background-image: url(images/coast.jpg);
+74 background-repeat: no-repeat;
+75 background-size: 100% 100%;
+76 }
+77 #yurthero {
+78 height: 300px;
+79 background-image: url(images/yurt.jpg);
+80 background-repeat: no-repeat;
+81 background-size: 100% 100%;
+82 }
+83 #trailhero {
+84 height: 300px;
+85 background-image: url(images/trail.jpg);
+86 background-repeat: no-repeat;
+87 background-size: 100% 100%;
+88 }
