@@ -125,6 +125,32 @@ dt {
   font-weight: bold;
 }
 
+/* ---------- Table Styles ---------- */
+
+table {
+  width: 90%;
+  border: 1px solid #3399CC;
+  border-collapse: collapse;
+  margin: 1em auto;
+}
+
+th, td {
+  border: 1px solid #3399CC;
+  padding: 5px;
+}
+
+td {
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background-color: #DFEDF8;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 2em;
