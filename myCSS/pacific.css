@@ -1,18 +1,29 @@
-/* Pacific Trails Resort Styles */
-
-/* ---------- Global Styles ---------- */
-body {
-  background-color: #EAEAEA;
-  color: #555;
-  font-family: Verdana, Arial, sans-serif;
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background-color: #90C7E3;
+  color: #666666;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+#wrapper { }
 
 header {
   background-color: #002171;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Georgia, serif;
   padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 header a {
@@ -20,155 +31,182 @@ header a {
   color: #FFFFFF;
 }
 
-header a:hover {
-  color: #90C7E3;
-}
-
-h1 {
-  font-size: 2em;
-  letter-spacing: 0.25em;
-}
-
-h2 {
-  color: #1976D2;
-  font-family: Georgia, serif;
-  text-shadow: 1px 1px 1px #CCCCCC;
-}
-
-h3 {
-  color: #003366;
-  font-family: Georgia, serif;
-}
-
-p {
-  line-height: 1.6;
-}
-
 nav {
-  background-color: #90C7E3;
+  background-color: #ffffff;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 0.5em;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
+  width: 100%;
   padding: 0;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 nav li {
-  display: block;
+  padding: .5em 1em;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 nav a {
   text-decoration: none;
-  color: #002171;
-}
-
-nav a:hover {
-  color: #FFFFFF;
+  color: #5C7FA3;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 main {
-  padding: 1em;
+  padding: 0 1em;
+  min-height: 200px;
+}
+
+section {
+  padding-left: .5em;
+  padding-right: .5em;
+  box-sizing: border-box;
+}
+
+#homehero, #yurthero, #trailhero, #reshero {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200% 100%;
+}
+
+#homehero { background-image: url("../images/coast.jpg"); }
+#yurthero { background-image: url("../images/yurt.jpg"); }
+#trailhero { background-image: url("../images/trail.jpg"); }
+#reshero { background-image: url("../images/ocean.jpg"); }
+
+.resort {
+  color: #1976D2;
+  font-size: 1.05em;
+}
+
+.special {
+  font-weight: bold;
+  color: #660099;
 }
 
 footer {
-  background-color: #90C7E3;
-  font-size: 0.8em;
+  background: #FFFFFF;
+  font-size: .85em;
   font-style: italic;
   text-align: center;
   padding: 1em;
 }
 
-.resort {
-  color: #1976D2;
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#mobile { display: inline; }
+#desktop { display: none; }
+
+dt {
+  color: #002171;
   font-weight: bold;
 }
 
-/* ---------- Hero Images ---------- */
-#homehero {
-  height: 300px;
-  background-image: url('../images/coast.jpg');
-  background-size: cover;
-  background-position: center;
+/* ---------- Table Styles ---------- */
+table {
+  width: 90%;
+  border: 1px solid #3399CC;
+  border-collapse: collapse;
+  margin: 1em auto;
 }
 
-#yurthero {
-  height: 300px;
-  background-image: url('../images/yurt.jpg');
-  background-size: cover;
-  background-position: center;
+th, td {
+  border: 1px solid #3399CC;
+  padding: 5px;
 }
 
-#trailhero {
-  height: 300px;
-  background-image: url('../images/trail.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-#reshero {
-  height: 300px;
-  background-image: url('../images/ocean.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+td { text-align: center; }
+.text { text-align: left; }
+tr:nth-of-type(even) { background-color: #DFEDF8; }
 
 /* ---------- Form Styles ---------- */
 form {
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  max-width: 600px;
-}
-
-label {
-  margin-top: 0.5em;
-  font-weight: bold;
+  padding-left: 1em;
+  width: 80%;
+  margin: 1em auto;
 }
 
 input, textarea {
-  margin-bottom: 1em;
-  padding: 0.5em;
+  margin-bottom: .5em;
+  padding: .4em;
+  font-family: inherit;
   font-size: 1em;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: .25em;
 }
 
 input[type="submit"] {
-  background-color: #2e8b57;
+  background-color: #002171;
   color: white;
+  font-weight: bold;
   border: none;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
-  border-radius: 4px;
+  padding: .6em;
   cursor: pointer;
-  width: auto;
+  border-radius: .25em;
 }
 
 input[type="submit"]:hover {
-  background-color: #256d46;
+  background-color: #003c9e;
 }
 
-/* ---------- Media Queries ---------- */
+/* ---------- Responsive Layouts ---------- */
 @media (min-width: 600px) {
-  nav li {
-    display: inline;
-    padding: 0 1em;
+  h1 {
+    font-size: 2em;
+    letter-spacing: .25em;
   }
 
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 2em;
+  }
+
+  nav li { width: 12em; border-bottom: none; }
+
+  section { padding-left: 2em; padding-right: 2em; }
+
+  #flow {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: flex-start;
+  }
+
+  #flow > section { flex: 1 1 0; box-sizing: border-box; }
+
+  #mobile { display: none; }
+  #desktop { display: inline; }
+
+  #homehero, #yurthero, #trailhero, #reshero {
+    background-size: 100% 100%;
+    height: 300px;
+  }
+
+  /* Two-column form layout */
   form {
     display: grid;
     grid-template-columns: 10em 1fr;
     grid-gap: 1em;
     align-items: center;
-    max-width: 700px;
+    width: 60%;
   }
 
   label {
@@ -180,26 +218,47 @@ input[type="submit"]:hover {
   input[type="submit"] {
     grid-column: 2;
     justify-self: start;
+    width: 9em;
   }
 }
 
 @media (min-width: 1024px) {
   body {
-    background-image: linear-gradient(#FFFFFF, #90C7E3);
+    background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+    background-repeat: no-repeat;
+  }
+
+  nav ul {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #wrapper {
     width: 80%;
-    margin: auto;
-    background-color: #FFFFFF;
-    box-shadow: 3px 3px 3px #333;
+    margin: 0 auto;
   }
 
-  nav {
-    text-align: left;
-    padding-left: 2em;
+  header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  h1 { font-size: 3em; letter-spacing: 0.25em; }
+
+  main {
+    padding: 2em;
+    min-height: 300px;
+  }
+
+  #homehero, #yurthero, #trailhero, #reshero {
+    height: 400px;
+    background-size: 100% 100%;
   }
 }
+
 
 
 
