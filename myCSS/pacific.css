@@ -84,9 +84,29 @@ section {
   background-size: 200% 100%;
 }
 
-#homehero { background-image: url('/JJC/images/coast.jpg'); }
-#yurthero { background-image: url('/JJC/images/yurt.jpg'); }
-#trailhero { background-image: url('/JJC/images/trail.jpg'); }
+#homehero { background-image: url('../images/coast.jpg'); }
+#yurthero { background-image: url('../images/yurt.jpg'); }
+#trailhero { background-image: url('../images/trail.jpg'); }
+
+/* ---------- New Hero Section for Reservations ---------- */
+#reshero {
+  height: 300px;
+  background-image: url('../images/ocean.jpg');
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+/* ---------- Form Styles ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  width: 80%;
+}
+
+input, textarea {
+  margin-bottom: 0.5em;
+}
 
 .resort {
   color: #1976D2;
@@ -151,6 +171,7 @@ tr:nth-of-type(even) {
   background-color: #DFEDF8;
 }
 
+/* ---------- Responsive Layouts ---------- */
 @media (min-width: 600px) {
   h1 {
     font-size: 2em;
@@ -202,6 +223,23 @@ tr:nth-of-type(even) {
     background-size: 100% 100%;
     height: 300px;
   }
+
+  /* ---------- Two-column Form Layout ---------- */
+  form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    grid-gap: 1em;
+  }
+
+  input[type="submit"] {
+    grid-column: 2;
+    width: 9em;
+  }
+
+  #reshero {
+    background-size: 100% 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -240,11 +278,13 @@ tr:nth-of-type(even) {
 
   #homehero,
   #yurthero,
-  #trailhero {
+  #trailhero,
+  #reshero {
     height: 400px;
     background-size: 100% 100%;
   }
 }
+
 
 
 
